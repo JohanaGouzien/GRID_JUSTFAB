@@ -1,0 +1,301 @@
+/*HEADER*/
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo connexion";
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: grid;
+    grid-area: logo;
+    justify-content: center;
+
+}
+
+#logo {
+    height: 50px;
+    align-self: center;
+}
+
+
+.connexion {
+    display: grid;
+    grid-area: connexion;
+}
+
+/*.title {
+    display: inline-grid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+}*/
+
+
+
+.pink {
+    color: palevioletred;
+}
+
+/*SECTION CHAUSSURES 1*/
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 100px;
+    background-color: rgb(201, 184, 157);
+}
+
+/*EXCLUSIVITE*/
+
+.exclu {
+    background-color: peachpuff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.shoes {
+    font-size: 30px;
+}
+
+.price {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.start {
+    color: cornsilk;
+    background-color: black;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*OFFRE SPECIALE*/
+
+.offre {
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+/*CATEGORIES*/
+
+.categories {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.choix {
+    height: 300px;
+}
+
+/*QUIZ*/
+
+.quiz {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+}
+
+
+.reponse {
+    display: grid;
+    background-color: pink;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    padding-right: 45px;
+    padding-left: 45px;
+
+}
+
+/*Programme VIP*/
+
+.programme {
+    background-color: darkgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.VIP {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.panier {
+    height: 150px;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.VIP p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*FOOTER*/
+
+.one {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.justfab {
+    display: grid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.two {
+    margin-left: 30px;
+}
+
+@media screen and (max-width:680px) {
+   
+    
+    /*HEADER*/
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo""connexion";
+        /* height: 200px; */
+    }
+
+    .logo {
+        display: grid;
+        grid-area: logo;
+        height: 50px
+    }
+
+    .connexion {
+        display: grid;
+        grid-area: connexion;
+    }
+    
+
+    /*SECTION*/
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    article img {
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*EXCLU*/
+
+    /*OFFRE SPECIALE*/
+
+    .offre {
+        height: 150px;
+        margin: 0px;
+         
+    }
+
+    /*CATEGORIES*/
+
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        justify-items:center;
+    }
+
+    .choix {
+        height: 150PX;
+
+    }
+
+    /*QUIZ*/
+
+    .women {
+        display: none;
+    }
+
+    .reponse {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .startquiz{
+        display: grid;
+        padding-top: 0;
+    }
+
+    /*PROGRAMME VIP*/
+
+    .programme div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /*FOOTER*/
+
+    .one {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+
+    }
+    
+
+    
+
+
+    
+
+    
+
+    .start {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+
+    
+
+    
+
+    
+
+}
